@@ -1,48 +1,54 @@
 Student Performance Prediction
-📘 Project Overview
+📘 Overview
 
-This project predicts students’ final academic performance (G3) using machine learning.
-The model analyzes factors such as demographic data, study habits, and previous grades to identify the key elements that most influence academic success.
+This project predicts students’ final academic performance (G3) using machine learning techniques.
+It analyzes factors such as demographics, study habits, attendance, and previous grades to identify what most influences success.
 
 🧠 Objective
 
-To build and evaluate a regression model capable of forecasting a student’s final grade with high accuracy.
+To develop a regression model capable of accurately forecasting a student’s final grade and understanding the most important contributing factors.
 
 📊 Dataset
 
-Source: UCI Machine Learning Repository – Student Performance Data Set
+Source: UCI Machine Learning Repository — Student Performance Data Set
 
-Files Used: student-mat.csv, student-por.csv
+Files Used:
 
-Each file includes demographic, social, and academic data for students in Portuguese and Mathematics courses.
+student-mat.csv — Math course
+
+student-por.csv — Portuguese course
+
+Records: 1,044 students
+
+Features: 34 attributes (demographic, social, and academic)
 
 ⚙️ Methodology
 
 Data Preparation
 
-Combined both datasets into one.
+Combined both datasets and added a course column.
 
-Encoded categorical variables using one-hot encoding.
+Encoded categorical features using one-hot encoding.
 
-Split data into training (80%) and testing (20%) sets.
+Split dataset into training (80%) and testing (20%).
 
-Model Training
+Model Building
 
-Used Random Forest Regressor for prediction.
+Algorithm used: Random Forest Regressor
+
+Framework: scikit-learn
 
 Evaluation Metrics
 
-Mean Squared Error (MSE)
+Mean Squared Error (MSE): 2.91
 
-R² Score (coefficient of determination)
+R² Score: 0.81
 
 📈 Results
 
-R² Score: ~0.81 (81% accuracy)
+Achieved 81% accuracy (R² = 0.81) in predicting final grades.
 
-MSE: ~2.9
-
-Top Predictive Features:
+Most influential features:
 
 G2 (Second Period Grade)
 
@@ -52,19 +58,23 @@ Study Time
 
 Absences
 
+“Earlier grades are the strongest predictors of student performance — confirming that continuous progress matters more than last-minute effort.”
+
 💡 Insights
 
-Prior grades (G1 and G2) are the strongest predictors of final results.
+Students’ previous grades (G1, G2) are the most powerful indicators of success.
 
-Consistent attendance and study time improve student outcomes.
+Study time and attendance also have measurable positive effects.
 
-Socioeconomic and family factors have a smaller but noticeable effect.
+Parental education and social factors play smaller roles compared to consistent academic performance.
 
 🧰 Tech Stack
 
-Languages: Python
+Language: Python
 
 Libraries: pandas, numpy, scikit-learn, matplotlib, seaborn
+
+Environment: Jupyter Notebook / VS Code
 
 📁 Project Structure
 student-performance-prediction/
@@ -76,8 +86,10 @@ student-performance-prediction/
 ├── student_performance.ipynb
 └── README.md
 
-📣 Author
+🧑‍💻 Author
 
 Fahad Shaikh
-Master’s Student in Embedded Systems, TU Chemnitz
-Email: shaikhfahad1708@gmail.com
+Master’s Student in Embedded Systems — TU Chemnitz
+📧 shaikhfahad1708@gmail.com
+
+🌐 GitHub Profile
