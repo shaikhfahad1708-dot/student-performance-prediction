@@ -1,0 +1,83 @@
+Student Performance Prediction
+📘 Project Overview
+
+This project predicts students’ final academic performance (G3) using machine learning.
+The model analyzes factors such as demographic data, study habits, and previous grades to identify the key elements that most influence academic success.
+
+🧠 Objective
+
+To build and evaluate a regression model capable of forecasting a student’s final grade with high accuracy.
+
+📊 Dataset
+
+Source: UCI Machine Learning Repository – Student Performance Data Set
+
+Files Used: student-mat.csv, student-por.csv
+
+Each file includes demographic, social, and academic data for students in Portuguese and Mathematics courses.
+
+⚙️ Methodology
+
+Data Preparation
+
+Combined both datasets into one.
+
+Encoded categorical variables using one-hot encoding.
+
+Split data into training (80%) and testing (20%) sets.
+
+Model Training
+
+Used Random Forest Regressor for prediction.
+
+Evaluation Metrics
+
+Mean Squared Error (MSE)
+
+R² Score (coefficient of determination)
+
+📈 Results
+
+R² Score: ~0.81 (81% accuracy)
+
+MSE: ~2.9
+
+Top Predictive Features:
+
+G2 (Second Period Grade)
+
+G1 (First Period Grade)
+
+Study Time
+
+Absences
+
+💡 Insights
+
+Prior grades (G1 and G2) are the strongest predictors of final results.
+
+Consistent attendance and study time improve student outcomes.
+
+Socioeconomic and family factors have a smaller but noticeable effect.
+
+🧰 Tech Stack
+
+Languages: Python
+
+Libraries: pandas, numpy, scikit-learn, matplotlib, seaborn
+
+📁 Project Structure
+student-performance-prediction/
+│
+├── data/
+│   ├── student-mat.csv
+│   └── student-por.csv
+│
+├── student_performance.ipynb
+└── README.md
+
+📣 Author
+
+Fahad Shaikh
+Master’s Student in Embedded Systems, TU Chemnitz
+Email: shaikhfahad1708@gmail.com
